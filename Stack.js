@@ -1,17 +1,17 @@
 function first(){
-    second();
-    console.log('첫번째');
+    second()
+    console.log('첫번째')
 }
 
 function second(){
-    third();
-    console.log('두번째');
+    third()
+    console.log('두번째')
 }
 
 function third(){
-    console.log('세번째');
+    console.log('세번째')
 }
-first();
+first()
 
 // 호출 스택
 // 순서대로 쌓이고 위에서 부터 실행되고 사라진다.
