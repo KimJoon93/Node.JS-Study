@@ -87,3 +87,15 @@ console.log(add3(1,2))
 console.log(add4(1,2))
 console.log(not1(3))
 console.log(not2(3))
+
+var relationship1 = {
+    name: 'zero',
+    friends: ['nero', 'hero','zero'],
+    logFriends: function(){
+        var that = this;
+        this.friends.forEach(function(friends){
+            console.log(that.name, friends);
+        });
+    },
+};
+relationship1.logFriends()
