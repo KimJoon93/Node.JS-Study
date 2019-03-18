@@ -170,10 +170,21 @@ const promise = new Promise((resolve, reject) => {
 
 promise
     .then((message)=> {
-        console.log(message);
+        console.log(message);   //성공한 경우
     })
     .catch((error) => {
-        console.error(error); 
+        console.error(error); //실패한 경우
     });
 
-    
+
+/********************************************************************* */
+
+/** Async/Await*/
+//Node 7.6 부터 지원되는 기능
+
+async function findAndSaveUser(Users){
+    let user = await Users.findOne({});
+    user.name = 'zero';
+    user = await user.save();
+    user = await Users.findOne({gender: 'm'});
+}
