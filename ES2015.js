@@ -169,12 +169,22 @@ const promise = new Promise((resolve, reject) => {
 });
 
 promise
-    .then((message)=> {
+    .then((message)=> {         //resolve 인자 받을 수 있음
         console.log(message);   //성공한 경우
     })
-    .catch((error) => {
+    .catch((error) => {         // reject 인자 받을 수 있음
         console.error(error); //실패한 경우
     });
+
+// resolve가 호출되면 then 의 메세지가 성공
+// reject가 호출되면 catch의 error가 실패로 되는것
+
+//condition 이 false면 catch 에서 에러
+// 다른 then catch 붙일 수 있음
+
+//콜백을 사용할 때 안으로 계속 들어가야하는데 프로미스를 사용할 경우 깊어지지 않을 수 있음
+
+//Promise.all을 사용할 경우 여러개 한번에 사용가능
 
 
 /********************************************************************* */
