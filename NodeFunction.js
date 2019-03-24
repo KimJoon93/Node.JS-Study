@@ -17,3 +17,8 @@ const interval = setInterval(() => {
     console.log('1초 마다 실행 1초마다 아무것도 하고싶디 않아');
     
 },1000);
+
+const timeout2 = setTimeout(() => {
+    console.log('실행되지 않습니다.');
+}, 1000);
+
